@@ -4,7 +4,7 @@ Backend APIs for Graduation project.
 
 ## Environment
 * Ruby 3.2.2
-* Rails 7.0.7
+* Rails 7.1.2
 * PostgreSQL 9.3 
 
 ## Getting started
