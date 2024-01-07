@@ -46,7 +46,7 @@ module Admin
 
       def accept
         @pending_doctor = Pending.find(params[:id])
-        user_params = @pending_doctor.attributes.slice('name', 'email', 'password', 'password_confirmation', 'role')
+        user_params = @pending_doctor.attributes.slice('name', 'email', 'password', 'password_confirmation', 'role', 'image')
         user_params['role'] = 'doctor'
   
         existing_user = User.find_by(email: user_params['email'])
@@ -70,7 +70,7 @@ module Admin
       private
   
       def pending_doctor_params
-        params.require(:pending_doctor).permit(:name, :email, :password, :password_confirmation, :role)
+        params.require(:pending_doctor).permit(:name, :email, :password, :password_confirmation, :role, :image)
       end
     end
   end
