@@ -11,7 +11,7 @@ services:
       #  APP_USER_ID: ${APP_USER_ID}
     env_file: .env
     volumes:
-      - .:/APIs
+      - .:/app
     tmpfs:
       - /tmp
     ports:
