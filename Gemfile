@@ -10,6 +10,11 @@ gem "activeadmin"
 gem "devise"
 
 gem "sassc-rails"
+
+gem "image_processing"
+
+gem 'ransack'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
