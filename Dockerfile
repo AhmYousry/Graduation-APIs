@@ -25,6 +25,6 @@ COPY --chown=${USER}:${USER} . .
 
 USER ${USER}
 
-EXPOSE 3000
+EXPOSE 4000
 
 CMD [ "bundle","exec","rails", "server", "-b", "0.0.0.0", "-e", "production" ]

@@ -15,14 +15,14 @@ services:
     tmpfs:
       - /tmp
     ports:
-      - "3000:3000"
+      - "4000:4000"
     depends_on:
       - development_db
       - test_db
     networks:
       - api_private_network
   
-    command: [ "bundle","exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000","-e", "development"]
+    command: [ "bundle","exec", "rails", "server", "-b", "0.0.0.0", "-p", "4000","-e", "development"]
 
   development_db:
     &development_db
